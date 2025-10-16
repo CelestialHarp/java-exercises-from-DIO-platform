@@ -1,4 +1,4 @@
-package topic03_Java_And_The_Art_Of_Abstraction_With_Classes_And_Encapsulation;
+package topic02_Control_Structures_In_Java;
 
 import java.util.Locale;
 import java.util.Scanner;
