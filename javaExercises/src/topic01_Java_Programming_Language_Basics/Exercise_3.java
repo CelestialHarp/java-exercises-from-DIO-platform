@@ -16,6 +16,7 @@ public class Exercise_3 {
 		
 		System.out.print("Digite o tamanho da altura do retângulo cuja área será calculada:");
 		int height = scanner.nextInt();
+		//...
 		
 		//calculating area
 		int area = (base * height);
