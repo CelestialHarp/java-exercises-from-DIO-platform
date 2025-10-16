@@ -14,6 +14,7 @@ public class Exercise_1 {
 		System.out.print("Digite um número para ser gerada a tabuada: ");
 		int factor1 = scanner.nextInt();
 		int result = 0;
+
 		//Spitting every piece of the multiplication table a time.
 		for (int factor2 = 0; factor2 < 11; factor2++) {
 			result =  factor1 * factor2;
