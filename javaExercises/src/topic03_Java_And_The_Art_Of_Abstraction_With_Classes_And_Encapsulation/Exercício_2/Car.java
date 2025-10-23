@@ -1,7 +1,7 @@
 package topic03_Java_And_The_Art_Of_Abstraction_With_Classes_And_Encapsulation.Exercício_2;
 	
 	enum Gear {
-		/*I know the readme don't ask me for a reverse gear but every car have a reverse gear.
+		/*I know the readme doesn't ask me for a reverse gear but every car has a reverse gear.
 		 *  Probably my professor just cut out the reverse one because it would be easier for the student to implement the code.
 		 */
 		reverse(-1),
@@ -131,15 +131,15 @@ package topic03_Java_And_The_Art_Of_Abstraction_With_Classes_And_Encapsulation.E
 			int desiredSpeed = (speed += value);
 			/*The following if statement is just a representation of the system's constrictions according to the readme, but starting from the speed, not the gear. 
 			 * So, it goes, beginning in the starred line, just as the readme reads: "f the car is in gear 0 (neutral) it cannot accelerate",
-			 * "if it is in 1st gear its speed can be between 0km and 20km", and so goes on. The only difference from what would
+			 * "if it is in 1st gear its speed can be between 0km and 20km", and so on. The only difference from what would
 			 * be the exact code my professor wants me to write would be that in the line 144 it would just check if the gears 0 and 1 are not engaged, not also the -1.
 			 * I'm proud of the way I implemented the restrictions, they've turned what would be  a big succession of if statements checking conditions which otherwise
 			 * would be difficult to pinpoint by reading the readme into a smaller set of restrictions, one after another, that can be read in a way that is much more
-			 * alike to the exact way restrictions are given in the read.me, except for the inverted way I put the logic propositions, which I have found more intuitive.
+			 * similar to the exact way restrictions are given in the read.me, except for the inverted way I put the logic propositions, which I have found more intuitive.
 			 * NOTE: As I've already said, I know I implemented restrictions that weren't given in the readme, but since this is just a simple exercise, it is not a problem.
 			 * The starred line is just a way of saying "if the desired is speed is 0 and the gear isn't neutral nor the first, neither the reverse, it shouldn't be possible
 			 * to make the change". It's a way I found to give 0 as a possible velocity for those three gears. interestingly, I lost a little time dealing with the ||
-			 * operator because in natural language peopleo tend to say these kinds of conditions as ors, but actually what I needed were an &&.
+			 * operator because in natural language people tend to say these kinds of conditions as ors, but actually what I needed was an &&.
 			 * 
 			 */
 			if (
