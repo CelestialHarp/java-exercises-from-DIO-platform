@@ -76,7 +76,7 @@ public class Exercício_2 {
 							}
 						};
 					
-				}
+					}
 					case 5 -> car.setOrientation(false);
 					case 6 -> car.setOrientation(true);
 					case 7 -> {
