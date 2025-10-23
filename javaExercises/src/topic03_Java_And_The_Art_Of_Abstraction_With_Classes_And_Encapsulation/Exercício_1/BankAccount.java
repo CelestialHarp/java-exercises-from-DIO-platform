@@ -1,9 +1,9 @@
-package topic03_Java_And_The_Art_Of_Abstraction_With_Classes_And_Encapsulation;
+package topic03_Java_And_The_Art_Of_Abstraction_With_Classes_And_Encapsulation.Exercício_1;
 
 public class BankAccount {
-	//I find the way people normally structure atributes, getters and setters a little confusing, so I will comment their layers so that I cannot be confused, at least for now that I am a starter. Probably it will get less confusing over time.
+	//I find the way people normally structure attributes, getters and setters a little confusing, so I will comment their layers so that I cannot be confused, at least for now that I am a starter. Probably it will get less confusing over time.
 	
-	//Atributes
+	//Attributes
 	private double balance = 0;
 	
 	private double overdraft = 0;
@@ -31,7 +31,7 @@ public class BankAccount {
 	}
 	//automatically generated setter methods for overdraft and balance removed to avoid direct interaction.
 	
-	//Methods:
+	//My methods. I consider it to be adequate to have methods like these, that are basically other getter and setter methods, but with different quirks, because this way we preserve the simpler getter and setter methods for when the need comes, for example, when trying to extract useful data (although I am not a big fan of companies peeking private data, I understand many times it is good to understand better your publics and improving your enterprise).
 	public void depositMoney(double depositAmount){
 		this.balance += depositAmount;
 	}

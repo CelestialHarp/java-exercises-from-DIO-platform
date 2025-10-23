@@ -30,7 +30,7 @@
 		Caso o limite de cheque especial seja usado, assim que possível a conta deve cobrar uma taxa de 20% do valor usado do cheque especial. 
 		
     */
-package topic03_Java_And_The_Art_Of_Abstraction_With_Classes_And_Encapsulation;
+package topic03_Java_And_The_Art_Of_Abstraction_With_Classes_And_Encapsulation.Exercício_1;
 
 import java.util.Scanner;
 
@@ -83,6 +83,7 @@ public class Exercise_1 {
 		System.out.println("Para criar uma conta, é necessário realizar um depósito.");
 		System.out.println("Digite um valor para realizar um depósito:");
 		double depositAmount = scanner.nextDouble();
+		scanner.nextLine();
 		bankAccount = new BankAccount(depositAmount);
 		System.out.println("Conta criada com sucesso.");
 	}
